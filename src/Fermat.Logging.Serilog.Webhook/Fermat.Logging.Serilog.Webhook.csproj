@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackageId>Fermat.Logging.Serilog.Webhook</PackageId>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Version>0.0.0</Version>
+        <Authors>Samet Karademir</Authors>
+        <PackageTags>exceptions;dotnet;utilities;logging;webhook</PackageTags>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/Fermat-Lab/fermat-logging-serilog-webhook</PackageProjectUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="/" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Fermat.Exceptions.Core" Version="0.0.1" />
+      <PackageReference Include="Fermat.Extensions.Core" Version="0.0.1" />
+      <PackageReference Include="Fermat.Logging.Serilog" Version="0.0.1" />
+    </ItemGroup>
+
+</Project>
